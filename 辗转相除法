@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+	int a,b,s,d;
+	printf("请输入你想要的求最大公约数的两个数\n"）：
+	scanf("%d%d",&a,&b);
+	a>b ?(a=a,d=b):(d=a,a=b);
+    if(a%d!=0)
+	{
+        do
+	    {
+		    s=a%d;
+		    a=d;
+		    d=s;
+	     }while(s=0);
+    }
+	else
+	d=d;
+	printf("这两个数的最大公约数为；%d\n",d);
+	return 0;
+}
